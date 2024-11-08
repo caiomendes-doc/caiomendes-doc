@@ -1,16 +1,29 @@
+# 👋 Olá, eu sou Caio Mendes!
 
-# 📕 Informações  
+Sou desenvolvedor com experiência em Front-End, não chego no nível de um senior ainda. Tenho paixão por livros e adoro trabalhar com figma.
 
-Nesse repositório pode ser encontrado minha experiência atual na área de desenvolvimento.
+## 🛠️ Habilidades Técnicas
 
-Igualmente contendo projetos simples ao avançados. Portanto, esse repositório terá exercícos, bastante exercícios para treinar e desenvolver melhor a capacidade naquela determina linguagem.
+### Linguagens e Tecnologias
+- **HTML**: Estruturação de páginas web.
+- **CSS**: Estilização e design de páginas web.
+- **JavaScript**: Funcionalidades dinâmicas e interatividade em páginas web.
+- **MySQL**: Bancos de dados relacionais.
+- **C#**: Desenvolvimento de aplicações.
 
-# 🔒 Créditos
+### Ferramentas e Software
+- **Autodesk AutoCAD**: Criação de desenhos técnicos e projetos.
+- **Figma**: Design de interfaces e criação de templates ou sites.
 
-Desenvolvido e criado por Caio Mendes.
+## 🎨 Outras Habilidades
+- **Criação de Imagens**: Edição e manipulação de imagens para projetos diversos.
 
-Segue abaixo para encontrar minhas redes sociais:
- - Instagram
- - TikTok
- - Youtube
- - X 
+## 📈 Experiência
+Atualmente, tenho conhecimento em HTML, CSS e JavaScript, e estou começando a aprender MySQL e C#. Além disso, tenho experiência com Autodesk AutoCAD e Figma, o que me permite criar tanto projetos técnicos quanto visuais.
+
+## 📫 Contato
+- [Instagram](https://www.instagram.com)
+- [TikTok](https://www.tiktok.com)
+- [YouTube](https://www.youtube.com)
+- [X](https://www.x.com)
+
