@@ -5,8 +5,6 @@ Sou desenvolvedor com experiência em Front-End, não chego no nível de um seni
 ## 🛠️ Habilidades Técnicas
 
 ### Linguagens e Tecnologias
-- **HTML**: Estruturação de páginas web.
-- **CSS**: Estilização e design de páginas web.
 - **JavaScript**: Funcionalidades dinâmicas e interatividade em páginas web.
 - **MySQL**: Bancos de dados relacionais.
 - **C#**: Desenvolvimento de aplicações.
