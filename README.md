@@ -19,7 +19,7 @@ Sou desenvolvedor com experiência em Front-End, não chego no nível de um seni
 ## 📈 Experiência
 Atualmente, tenho conhecimento em HTML, CSS e JavaScript, e estou começando a aprender MySQL e C#. Além disso, tenho experiência com Autodesk AutoCAD e Figma, o que me permite criar tanto projetos técnicos quanto visuais.
 
-## 📫 Contato
+## 📫 Redes sociais
 - [Instagram](https://www.instagram.com)
 - [TikTok](https://www.tiktok.com)
 - [YouTube](https://www.youtube.com)
