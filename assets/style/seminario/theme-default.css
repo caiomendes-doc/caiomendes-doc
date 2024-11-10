@@ -1,0 +1,172 @@
+body {
+    background: linear-gradient(50deg, #b61717, #4210f7);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: .5em .5em 1em #27272750;
+    width: 50em;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #fff;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+/* Section - Título Seminário */
+
+.nome-seminario {
+    margin-top: 1em;
+}
+
+.titulo-seminario h1 {
+    font-size: 2em;
+    margin: 1em 0em;
+}
+
+.titulo-seminario h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2em;
+    background: linear-gradient(50deg, #b61717 1%, 70%, #4210f7 110%);
+    border-radius: 1em;
+    margin-top: .3em;
+}
+
+.icon-titulo {
+    margin-right: .5em;
+    color: #5840c2;
+}
+
+.sub-titulo {
+    font-size: .35em;
+    font-weight: 300;
+    margin-left: .1em;
+    color: #fff;
+    background-color: #333;
+    padding: .3em .5em;
+    border-radius: 1em;
+}
+
+/* Section - Informações */
+
+.informacoes {
+    width: 85%;
+    margin-bottom: 2em;
+}
+
+.titulo-informacoes h2 {
+    font-size: 2em;
+    margin: .5em 0em;
+}
+
+.titulo-informacoes h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2em;
+    background-color: #e7e7e7;
+    border-radius: 1em;
+    margin: .1em 0em;
+}
+
+.texto-informacoes {
+    border-left: .2em solid #636363;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 1em;
+}
+
+/* Section - Botões */
+
+.btn-style {
+    background-color: #5840c2;
+    box-shadow: .1em .1em .3em #27272750;
+    color: #fff;
+    padding: .7em 1em;
+    border-radius: .3em;
+    margin: 1em 0em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-style:hover {
+    background-color: #856eeb;
+}
+
+#voltar {
+    display: none;
+}
+
+#menu-topicos {
+    display: none;
+}
+
+
+/* Section - Tópicos */
+
+.topicos {
+    width: 85%;
+    margin-top: 2em;
+    display: none;
+}
+
+.topicos h2 {
+    font-size: 2em;
+    margin: .5em 0em;
+}
+
+.topicos h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2em;
+    background-color: #e7e7e7;
+    border-radius: 1em;
+    margin: .1em 0em;
+}
+
+.lista-topicos {
+    padding: 1em 3em;
+    margin-left: 1em;
+    border-left: .2em solid #e7e7e7;
+}
+
+.lista-topicos ul li {
+    font-size: 1.2em;
+    margin: .5em 0em;
+    border-bottom: .1em solid #e7e7e7;
+    list-style-type:decimal-leading-zero;
+}
+
+.lista-topicos ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.lista-topicos ul li a:hover {
+    color: #5840c2;
+}   
+
+
+

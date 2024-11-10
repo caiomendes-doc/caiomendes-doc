@@ -1,0 +1,54 @@
+@media (max-width: 820px) {
+    main {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .titulo-seminario h1 {
+        margin: 1.5em;
+    }
+
+    .informacoes {
+        width: 90%;
+    }
+
+    .sub-titulo {
+        font-size: .4em;
+    }
+}
+
+@media (max-width: 620px) {
+    .lista-topicos ul li {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 375px) {
+    .titulo-seminario h1 {
+        font-size: 1.6em;
+        margin: 1.5em;
+    }
+
+    .lista-topicos ul li {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 320px) {
+    .titulo-seminario h1 {
+        font-size: 1.4em;
+        margin: 1.5em;
+    }
+    
+    .titulo-seminario h1::after {
+        margin-top: .5em;
+    }
+
+    .titulo-informacoes h2 {
+        font-size: 1.5em;
+    }
+
+    .texto-informacoes p {
+        font-size: .8em;
+    }
+}

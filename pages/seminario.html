@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../assets/style/default-style.css">
     <link rel="stylesheet" href="../assets/style/default-style-external.css">
     <!--CSS Interno-->
-    <link rel="stylesheet" href="../assets/style/seminario/default-style.css">
+    <link rel="stylesheet" href="../assets/style/seminario/theme-default.css">
+    <link rel="stylesheet" href="../assets/style/seminario/theme-default-mobile.css">
     <!--Links Externos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,10 +22,57 @@
 
     <main>
 
+        <!--Título-->
         <section class="nome-seminario">
             <div class="titulo-seminario">
                 <h1><span class="material-symbols-outlined icon-titulo">screen_search_desktop</span>Ética na Sociedade Tecnológica <span class="sub-titulo">Seminário</span></h1>
             </div>
+        </section>
+
+        <!--Informações-->
+        <section class="informacoes">
+            <div class="titulo-informacoes">
+                <h2>Introdução</h2>
+            </div>
+            <div class="texto-informacoes">
+                <p>Olá, pessoal! </p><br>
+                <p>Neste pequeno projeto contém informações sobre Ética na Sociedade Tecnológica.
+                    As fontes utilizadas para desenvolvimento deste site estão disponíveis no final 
+                    dos tópicos em <span class="negrito">referências</span>.
+                </p><br>
+                <p>Fiz de maneira intuitiva e simples, semelhante a um PDF ou E-Book digital.
+                    Espero que gostem e que possa ajudar de alguma forma na solução de seus problemas ou
+                    no momento que for realizar perguntas.
+                </p>
+            </div>
+        </section>
+
+        <!--Tópicos-->
+        <section class="topicos">
+            <div class="titulo-topicos">
+                <h2>Tópicos</h2>
+            </div>
+            <div class="lista-topicos">
+                <ul>
+                    <li><a href="#">Introdução</a></li>
+                    <li><a href="#">Ética</a></li>
+                    <li><a href="#">Ética Digital</a></li>
+                    <li><a href="#">Indústria cultural x cultura digital</a></li>
+                    <li><a href="#">Sociedade atual</a></li>
+                    <li><a href="#">Rastreando comportamentos e traços pessoais</a></li>
+                    <li><a href="#">Big Data como instrumento político</a></li>
+                    <li><a href="#">Segurança na Tecnologia</a></li>
+                    <li><a href="#">Falsas esperanças e perigos reais</a></li>
+                    <li><a href="#">Pontos positivos e negativos</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Navegação do site -->
+        <section class="nav-site">
+            <button id="voltar" class="material-symbols-outlined btn-style">arrow_back</button>
+            <button id="menu-topicos" class="material-symbols-outlined btn-style">menu_book</button>
+            <button id="proximo" onclick="trocarInformacoesTela()" class="material-symbols-outlined btn-style">arrow_forward</butto>
         </section>
 
     </main>
@@ -35,5 +83,7 @@
         </div>
     </footer>
     
+    <script src="../assets/js/seminario/menu.js"></script>
+
 </body>
 </html>
