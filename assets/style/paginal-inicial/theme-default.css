@@ -12,8 +12,27 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50em;
     width: 50em;
+}
+
+/* Edição geral */
+
+.link-edit a {
+    background-color: #44c970;
+    border-radius: 1em;
+    color: #fff;
+    padding: .5em 1em;
+    font-size: 12px;
+    margin-left: .5em;
+    transition: all .3s ease-in-out; 
+}
+
+.link-edit a:hover {
+    background-color: #3a9e5f;
+}
+
+.negrito {
+    font-weight: 700;
 }
 
 /* Section - nome-e-tipoProjeto */
@@ -50,7 +69,7 @@ main {
 }
 
 .icon-title {
-    color: rgb(93, 189, 93);
+    color: #5dbd5d;
     margin-right: .2em;
 }
 
@@ -67,3 +86,85 @@ main {
     color: #640b0b;
 }
 
+/* Section - Sobre mim */
+
+.sobre-mim {
+    margin-top: 2em;
+    width: 85%;
+}
+
+.title-aboutme h2 {
+    font-size: 2em;
+}
+
+.title-aboutme h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2em;
+    background-color: #e7e7e7;
+    border-radius: 1em;
+    margin-top: .1em;
+}
+
+.formacao ul {
+    margin-top: 1em;
+}
+
+.tecnico h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.tecnico h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2em;
+    background-color: #e7e7e7;
+    border-radius: 1em;
+    margin-top: .1em;
+}
+
+/* Section - Proejtos e Desenvolvimento */
+
+.projetos-e-desenvolvimento {
+    display: flex;
+    margin: 2.5em 0em;
+    width: 85%;
+}
+
+.projetos, .desenvolvimento {
+    width: 50%;
+    margin: 0em .8em;
+}
+
+.projetos h2::after, .desenvolvimento h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2em;
+    background-color: #e7e7e7;
+    border-radius: 1em;
+    margin-top: .1em;
+}
+
+.projetos-finalizados, .desen-andamento {
+    margin-top: 0em;
+    padding: 1em 2em;
+}
+
+.desen-andamento ul li, .projetos-finalizados ul li {
+    list-style-type: disc;
+}
+
+.desen-primeiro p, .projetos-finalizados p {
+    font-size: 12px;
+    margin-top: .8em;
+    padding: .3em 1em;
+    border-left: .1em solid #d1d1d1;
+}
+
+.desen-primeiro span, .projetos-finalizados span {
+    font-weight: 700;
+}
