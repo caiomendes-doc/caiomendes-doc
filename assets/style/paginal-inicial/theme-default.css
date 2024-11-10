@@ -135,21 +135,6 @@ footer {
     margin-top: 1em;
 }
 
-.tecnico h2 {
-    margin-top: 1em;
-    font-size: 1.5em;
-}
-
-.tecnico h2::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: .2em;
-    background-color: #e7e7e7;
-    border-radius: 1em;
-    margin-top: .1em;
-}
-
 /* Section - Proejtos e Desenvolvimento */
 
 .projetos-e-desenvolvimento {
@@ -166,7 +151,7 @@ footer {
 .projetos h2::after, .desenvolvimento h2::after {
     content: '';
     display: block;
-    width: 100%;
+    width: 95%;
     height: .2em;
     background-color: #e7e7e7;
     border-radius: 1em;
