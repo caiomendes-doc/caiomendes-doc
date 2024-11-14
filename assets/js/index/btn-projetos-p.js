@@ -29,35 +29,34 @@ const verificarDisplay = (valorDisplay) => {
 }
 
 // Função para criar divs
-const criarDiv = (classDiv, classPai) => {
-    const novaDiv = document.createElement('div');
-    novaDiv.className = classDiv; // classe da div
-    document.querySelector(classPai).appendChild(novaDiv); // pai da div
+function criarDiv(classe, seletorPai) {
+    const div = document.createElement('div');
+    div.className = classe;
+    
+    const pai = document.querySelector(seletorPai);
+    pai.appendChild(div);
+
+    // Aplicar estilos se for um card
+    if (classe === 'cards-projetos') {
+        aplicarEstilosCard(div);
+    }
 }
 
 // Função para criar tags desejadas
-const criarTagDesejada = (tipoTag, classPai, textoDesejado, classTag) => {
-    const novaTag = document.createElement(tipoTag);
-
-    if (classTag !== '') {
-        novaTag.className = classTag;
+function criarTagDesejada(tag, seletorPai, texto, classe) {
+    const elemento = document.createElement(tag);
+    if (classe) {
+        elemento.className = classe;
     }
-
-    if(textoDesejado !== '') {
-        novaTag.textContent = textoDesejado;
-    }
-
-    document.querySelector(classPai).appendChild(novaTag);
+    elemento.textContent = texto;
+    
+    const pai = document.querySelector(seletorPai);
+    pai.appendChild(elemento);
 }
 
 // Função fixa document.style
-const editeStyle = (classSelect) => {
-    return document.querySelector(classSelect).style;
-}
-
-// Teste stylesheets
-const styleSheetEdit = (edicaoDesejada) => {
-    return document.styleSheets[0].cssRules[edicaoDesejada].style;
+function editeStyle(seletor) {
+    return document.querySelector(seletor).style;
 }
 
 //--------------------------------------------------------------
@@ -112,24 +111,74 @@ const areaProjetos = () => {
         // Criar cards para os projetos
         criarDiv('base-cards-projetos', classPagina.projetos_e_exercicios);
         criarDiv('cards-projetos', '.base-cards-projetos');
+        criarDiv('cards-projetos', '.base-cards-projetos');
+        criarDiv('cards-projetos', '.base-cards-projetos');
 
         // Edição da base-cards-projetos
-        editeStyle('.base-cards-projetos').display = 'flex';
         editeStyle('.base-cards-projetos').marginTop = '1em';
         editeStyle('.base-cards-projetos').justifyContent = 'space-around';
 
         // Edição dos cards-projetos
-        criarTagDesejada('p', '.cards-projetos', 'Projeto 1', 'titulo-projeto-1');
-        criarTagDesejada('span', '.titulo-projeto-1', 'eco', 'material-symbols-outlined');
         editeStyle('.cards-projetos').height = '10em';
         editeStyle('.cards-projetos').width = '10em';
         editeStyle('.cards-projetos').backgroundColor = '#fff';
         editeStyle('.cards-projetos').borderRadius = '1em';
         editeStyle('.cards-projetos').boxShadow = '.2em .2em .5em #0000001a';
 
-        styleSheetEdit('.cards-projetos').display = 'flex';
-
                 
     }
 }
 
+function salvarEstilosCard() {
+    const estilosCard = {
+        height: '10em',
+        width: '10em',
+        backgroundColor: '#fff',
+        borderRadius: '1em',
+        boxShadow: '.2em .2em .5em #0000001a'
+    };
+    localStorage.setItem('cardStyles', JSON.stringify(estilosCard));
+    return estilosCard;
+}
+
+function aplicarEstilosCard(card) {
+    const estilos = JSON.parse(localStorage.getItem('cardStyles')) || salvarEstilosCard();
+    Object.assign(card.style, estilos);
+}
+
+function adicionarProjetos() {
+    const classPagina = {
+        projetos_e_exercicios: '.projetos-e-exercicios'
+    };
+
+    const textosP = {
+        texto_projetos: 'Texto sobre os projetos'
+    };
+
+    criarTagDesejada('p', '.texto-projetos', textosP.texto_projetos, '');
+
+    // Verificar se a base-cards-projetos já existe
+    let baseCardsProjetos = document.querySelector('.base-cards-projetos');
+    if (!baseCardsProjetos) {
+        criarDiv('base-cards-projetos', classPagina.projetos_e_exercicios);
+        baseCardsProjetos = document.querySelector('.base-cards-projetos');
+        
+        // Aplicar estilos à base
+        baseCardsProjetos.style.marginTop = '1em';
+        baseCardsProjetos.style.justifyContent = 'space-around';
+        baseCardsProjetos.style.display = 'flex';
+        baseCardsProjetos.style.flexWrap = 'wrap';
+        baseCardsProjetos.style.gap = '1em';
+    }
+
+    // Criar cards para os projetos
+    for (let i = 0; i < 3; i++) {
+        criarDiv('cards-projetos', '.base-cards-projetos');
+    }
+}
+
+// Inicializar estilos dos cards
+salvarEstilosCard();
+
+// Executar quando a página carregar
+document.addEventListener('DOMContentLoaded', adicionarProjetos);

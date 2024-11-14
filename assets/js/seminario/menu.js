@@ -24,3 +24,17 @@ function trocarInformacoesTela () {
 
     trocaDisplayOk(topicos);
 }
+
+const referenciaFinal = () => {
+    const referencia = document.querySelector('.referencias-final');
+    const informacoes = document.querySelector('.informacoes');
+    const topicos = document.querySelector('.topicos');
+    const nav = document.querySelector('.nav-site');
+
+    if (referencia.style.display === 'none' || referencia.style.display === '') {
+        referencia.style.display = 'block';
+        informacoes.style.display = 'none';
+        topicos.style.display = 'none';
+        nav.style.display = 'none';
+    }
+}

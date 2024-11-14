@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Forum&family=Pridi:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 </head>
 <body>
 
@@ -31,7 +33,7 @@
 
         <!--Informações-->
         <section class="informacoes">
-            <div class="titulo-informacoes">
+            <div class="c-topicos titulo-informacoes">
                 <h2>Introdução</h2>
             </div>
             <div class="texto-informacoes">
@@ -49,7 +51,7 @@
 
         <!--Tópicos-->
         <section class="topicos">
-            <div class="titulo-topicos">
+            <div class="c-topicos titulo-topicos">
                 <h2>Tópicos</h2>
             </div>
             <div class="lista-topicos">
@@ -66,7 +68,66 @@
                     <li><a href="#">Pontos positivos e negativos</a></li>
                 </ul>
 
-                <button class="referencias"> Referências</button>
+                <button class="referencias" onclick="referenciaFinal()"> Referências</button>
+            </div>
+        </section>
+
+        <section class="referencias-final">
+            <div class="c-topicos titulo-referencias">
+                <h2>Créditos e Referências</h2>
+            </div>
+            <div class="texto-referencias">
+                <p>Este projeto foi desenvolvido por nosso grupo da faculdade, <span class="negrito">equipe 5</span>, estudantes de Gestão Empresarial.
+                    Nosso objetivo foi criar uma maneira simples e interativa de apresentar o
+                    seminário sobre Ética na Sociedade Tecnológica.</p>
+                
+                <div class="participantes-creditos">
+                    <h3>Participantes - Equipe 5</h3>
+                    <ul>
+                        <li>
+                            <img src="../assets/imgs/equipe/leila.jpg" alt="">
+                            <p>Leila</p>
+                        </li>
+                        <li>
+                            <img src="../assets/imgs/equipe/" alt="">
+                            <p>Chaiane</p>
+                        </li>
+                        <li>
+                            <img src="../assets/imgs/equipe/caio.jpg" alt="">
+                            <p>Caio Mendes</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="ref-referencais">
+                    <h3>Referências</h3>
+                    <ul>
+                        <li><a href="https://youtu.be/07pEiRymoLk?si=qieTDBKyzgacOmdq" target="_blank">Ética e Moral</a></li>
+                        <li><a href="https://youtu.be/h9ePkOZGAGI?si=-GDdHiWV9rFiNn2v" target="_blank">Ética Digital</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+
+                <div class="material-fornecido">
+                    <h3>Material fornecido</h3>
+                    <p>Utilizamos como nossa base principal de conhecimento no desenvolvimento desse projeto, 
+                        o PDF fornecido como material de estudo para o seminário.
+                    </p>
+
+                    <div class="v-pdf">
+                        <canvas id="pdf-viewer" class="pdf-estilo"></canvas>
+                    </div>
+
+                    <div class="navigation-pdf">
+                        <button id="prev-page" class="style-btn1">Página Anterior</button>
+                        <span class="conteudo-nav">Página: <span id="page-num"></span> / <span id="page-count"></span></span>
+                        <button id="next-page" class="style-btn1">Próxima Página</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -85,7 +146,9 @@
         </div>
     </footer>
     
+    
     <script src="../assets/js/seminario/menu.js"></script>
-
+    <script src="../assets/js/seminario/previewPDF.js"></script>
+    <script src="../assets/js/seminario/ref-final.js"></script>
 </body>
 </html>

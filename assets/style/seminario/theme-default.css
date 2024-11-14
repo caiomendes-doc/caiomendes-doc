@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 
 main {
@@ -31,6 +32,21 @@ footer {
 
 .negrito {
     font-weight: 700;
+}
+
+.c-topicos h2 {
+    font-size: 2em;
+    margin: .5em 0em;
+}
+
+.c-topicos h2::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .2em;
+    background-color: #e7e7e7;
+    border-radius: 1em;
+    margin: .1em 0em;
 }
 
 /* Section - Título Seminário */
@@ -76,21 +92,6 @@ footer {
     margin-bottom: 2em;
 }
 
-.titulo-informacoes h2 {
-    font-size: 2em;
-    margin: .5em 0em;
-}
-
-.titulo-informacoes h2::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: .2em;
-    background-color: #e7e7e7;
-    border-radius: 1em;
-    margin: .1em 0em;
-}
-
 .texto-informacoes {
     border-left: .2em solid #636363;
     background-color: rgba(0, 0, 0, 0.05);
@@ -131,21 +132,6 @@ footer {
     display: none;
 }
 
-.topicos h2 {
-    font-size: 2em;
-    margin: .5em 0em;
-}
-
-.topicos h2::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: .2em;
-    background-color: #e7e7e7;
-    border-radius: 1em;
-    margin: .1em 0em;
-}
-
 .lista-topicos {
     padding: 1em 3em;
     margin-left: 1em;
@@ -183,4 +169,104 @@ footer {
     background-color: #735ae4;
 }
 
+/* Section - Referências */
 
+.referencias-final {
+    display: none;
+    width: 85%;
+    margin: 2.5em 0em;
+}
+
+
+.ref-referencais h3, .material-fornecido h3, .participantes-creditos h3 {
+    font-size: 1.3em;
+    margin: 1em 0em;
+}
+
+.ref-referencais h3::after, .material-fornecido h3::after, .participantes-creditos h3::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: .1em;
+    background-color: #e7e7e7;
+    border-radius: 1em;
+}
+
+.participantes-creditos ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.participantes-creditos ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 1em;
+    width: 10em;
+}
+
+.participantes-creditos ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    box-shadow: .1em .1em .3em #27272750;
+    margin-bottom: 1em;
+}
+
+/* Referências */
+
+.ref-referencais ul, .material-fornecido ul {
+    padding: 1em 2em;
+    margin-left: 1em;
+    border-left: .5em solid #e7e7e7;
+}
+
+.ref-referencais ul li a, .material-fornecido ul li a {
+    color: #333;
+}
+
+.ref-referencais ul li a:hover, .material-fornecido ul li a:hover {
+    color: #5840c2;
+}
+
+/* Visualizar PDF */
+
+#pdf-viewer {
+    height: 600px;
+    border: 1px solid #ccc;
+}
+
+.v-pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+}
+
+.style-btn1 {
+    background-color: #5840c2;
+    color: #fff;
+    padding: .7em 1em;
+    border-radius: .3em;
+    margin: 1em 0em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.navigation-pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0em;
+}
+
+.conteudo-nav {
+    margin: 0em 1em;
+}
+
+.pdf-estilo {
+    margin-top: 2em;
+    background-color: #5840c2; 
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: .1em .1em .3em #27272750;
+}
