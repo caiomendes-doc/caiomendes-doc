@@ -207,7 +207,7 @@ footer {
 
 .participantes-creditos ul li img {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    max-height: 15em;
+    max-height: 10em;
     border-radius: 1em;
     box-shadow: .1em .1em .3em #27272750;
     margin-bottom: 1em;
