@@ -141,6 +141,10 @@ main {
     padding: 1em 2em;
 }
 
+.projetos-finalizados ul li {
+    margin: .8em 0em;
+}
+
 .desen-andamento ul li, .projetos-finalizados ul li {
     list-style-type: disc;
 }
