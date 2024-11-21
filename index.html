@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <!--Estilo Base - Para todas páginas -->
+    <!--Título e Favicon-->
+    <title>Caio Mendes</title>
+    <link rel="shortcut icon" href="./assets/imgs/icons/favicon.ico" type="image/x-icon">
+    <!--CSS Base - Para todas páginas -->
     <link rel="stylesheet" href="./assets/style/default-style.css">
     <link rel="stylesheet" href="./assets/style/default-style-external.css">
     <!--CSS Interno-->
-    <link rel="stylesheet" href="./assets/style/paginal-inicial/theme-default.css">
+    <link rel="stylesheet" href="./assets/style/pagina-inicial/theme-default.css">
+    <link rel="stylesheet" href="./assets/style/pagina-inicial/theme-default-mobile.css">
     <!--Links Externos-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,14 +23,92 @@
     <main>
         <section class="nome-e-tipoProjeto">
             <div class="title-name">
-                <h1><span class="material-symbols-outlined icon-title">eco</span>Caio Mendes<span class="sub-title">Portfólio</span></h1>
+                <h1><span class="material-symbols-outlined icon-title">eco</span>Caio Mendes<span class="sub-title">Arquivos</span></h1>
             </div>
         </section>
+        
+        <!--Avisos-->
         <section class="aviso">
-            <p>Construção desse Portfólio é constante, então, fique atento as atualizações.</p>
+            <p>Construção desse projeto é constante, então, fique atento as atualizações.</p>
             <p>No momento, estou adicionando aos poucos as informações.</p>
         </section>
+
+        <!--Sobre mim-->
+        <section class="sobre-mim">
+            <div class="title-aboutme">
+                <h2>Formação</h2>
+            </div>
+
+            <div class="formacao">
+                <ul>
+                    <li>Ensino Médio (<span class="negrito">Completo</span>)</li>
+                    <li>Faculdade de Gestão Empresarial (<span class="negrito">Cursando - Primeiro Semestre</span>)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Projetos pessoais em Desenvolvimento-->
+        <section class="projetos-e-desenvolvimento">
+
+            <!--Projetos finalizados-->
+            <div class="projetos">
+                <div class="title-projects">
+                    <h2>Projetos pessoais</h2>
+                </div>
+                <div class="projetos-finalizados">
+                    <ul>
+                        <li>Portfólio <span class="link-edit"><a href="https://caiounder.github.io/portfolio/" target="_blank">Acessar</a></span>
+                            <p>Este foi um pequeno projeto pessoal, tive como objetivo criar um 
+                                portfólio adequado para ser utilizado e entre outras ideias. 
+                                Porém não realizei mais atualizações, após finaliza-lo.</p>
+                        </li>
+                        <li class="desen-primeiro">Seminário <span class="link-edit"><a href="./pages/seminario.html" target="_blank">Acessar</a></span>
+                            <p>Um site simples e intuitivo, focado em textos. 
+                                Objetivo deste projeto é ser simples e usa-ló para apresentar
+                                junto com minha equipa em nosso seminário, pois nosso tema é 
+                                <span>Ética na Sociedade Tecnologica</span>.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Projetos em andamento-->
+            <div class="desenvolvimento">
+                <div class="title-desen">
+                    <h2>Em desenvolvimento</h2>
+                </div>
+                <div class="desen-andamento">
+                    <ul>
+                        <li> Nenhum no momento...</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--Exercícios ou Projetos para desenvolver melhor-->
+        <section class="exercicios">
+            <div class="title-exercicios">
+                <h2 class="style-h2">Projetos</h2>
+            </div>
+            <div class="text-exercicios">
+                <p>Estes são alguns projetos usados para melhorar minhas habilidades. 
+                    Alguns dos temas desses projetos foram gerados por I.A para melhorar meu aprendizado. 
+                    Fora os temas gerados, os outros tipos são o padrão utilizado por todos para se desenvolver.</p>
+                <button id="btn-projetos" onclick="areaProjetos()">Acessar área de projetos</button>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <div class="footer">
+            <p>Desenvolvido por <a href="https://github.com/caiomendes-doc" target="_blank">Caio Mendes</a></p>
+        </div>
+    </footer>
     
+
+    <script src="./assets/js/index/btn-projetos.js"></script>
 </body>
 </html>

@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
     font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
     text-decoration: none;
     list-style: none;
+    user-select: none;
+    transition: all .3s ease-in-out;
 }
 
 body {
@@ -18,3 +21,24 @@ body {
     width: 100vw;
 }
 
+footer {
+    color: #333;
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(109, 233, 146, 0.205);
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.footer a {
+    font-weight: 400;
+    color: #3a9e5f;
+    transition: all .3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #147236;
+}
