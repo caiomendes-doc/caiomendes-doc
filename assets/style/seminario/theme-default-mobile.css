@@ -17,9 +17,44 @@
     }
 }
 
+@media (max-width: 660px) {
+    #pdf-viewer {
+        width: 80%;
+    }
+}
+
 @media (max-width: 620px) {
     .lista-topicos ul li, .referencias {
         font-size: .9em;
+    }
+
+    #pdf-viewer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    #pdf-viewer {
+        width: 100%;
+    }
+
+    .navigation-pdf {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .participantes-creditos ul {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .participantes-creditos ul li {
+        margin: 1em 0em;
+    }
+
+    #pdf-viewer {
+        width: 110%;
     }
 }
 
@@ -31,6 +66,10 @@
 
     .lista-topicos ul li, .referencias {
         font-size: .8em;
+    }
+
+    .navigation-pdf {
+        font-size: 10px;
     }
 }
 

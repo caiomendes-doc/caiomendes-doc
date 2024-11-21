@@ -19,10 +19,24 @@ function trocarInformacoesTela () {
     const informacoes = '.informacoes';
     const topicos = '.topicos';
 
-    trocaDisplayNone(informacoes);
-    trocaDisplayNone(nomeSeminario);
+    let controle = 0 
 
-    trocaDisplayOk(topicos);
+    if (controle === 0 || controle !== 0) {  
+        trocaDisplayNone(informacoes);
+        trocaDisplayNone(nomeSeminario);
+
+        trocaDisplayOk(topicos);
+
+        if (controle === 1) {
+            trocaDisplayNone(informacoes);
+            trocaDisplayNone(nomeSeminario);
+
+            trocaDisplayOk(topicos);
+            controle = 0;
+        }
+
+        controle = 1;
+    } 
 }
 
 const referenciaFinal = () => {
@@ -36,5 +50,20 @@ const referenciaFinal = () => {
         informacoes.style.display = 'none';
         topicos.style.display = 'none';
         nav.style.display = 'none';
+    }
+}
+
+const voltarTopicos = () => {
+    const informacoes = document.querySelector('.informacoes');
+    const topicos = document.querySelector('.topicos');
+    const nav = document.querySelector('.nav-site');
+    const ref = document.querySelector('.referencias-final');
+
+    if (topicos.style.display !== 'block') {
+        ref.style.display = 'none';
+        informacoes.style.display = 'none';
+        topicos.style.display = 'inline-block';
+
+        nav.style.display = 'block';
     }
 }
