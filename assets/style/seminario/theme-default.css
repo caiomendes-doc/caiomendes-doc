@@ -310,6 +310,10 @@ footer {
     margin: 1em 4em;
 }
 
+.padrao-edit {
+    display: none;
+}
+
 .padrao-edit h1 {
     font-size: 2em;
     margin: 1em 0em;

@@ -24,8 +24,12 @@
 }
 
 @media (max-width: 620px) {
-    .lista-topicos ul li, .referencias {
+    .padrao-edit, .lista-topicos ul li, .referencias {
         font-size: .9em;
+    }
+
+    .padrao-edit {
+        margin: 1em 1.5em;
     }
 
     #pdf-viewer {

@@ -18,25 +18,18 @@ function trocarInformacoesTela () {
     const nomeSeminario = '.nome-seminario';
     const informacoes = '.informacoes';
     const topicos = '.topicos';
+    const nav = '.nav-site';
 
-    let controle = 0 
+    trocaDisplayNone(informacoes);
+    trocaDisplayNone(nomeSeminario);
+    trocaDisplayNone(nav);
 
-    if (controle === 0 || controle !== 0) {  
-        trocaDisplayNone(informacoes);
-        trocaDisplayNone(nomeSeminario);
+    trocaDisplayOk(topicos);
 
-        trocaDisplayOk(topicos);
-
-        if (controle === 1) {
-            trocaDisplayNone(informacoes);
-            trocaDisplayNone(nomeSeminario);
-
-            trocaDisplayOk(topicos);
-            controle = 0;
-        }
-
-        controle = 1;
-    } 
+    const teste = document.querySelectorAll('.padrao-edit');
+    teste.forEach(element => {
+        element.style.display = 'inline-block';
+    });
 }
 
 const referenciaFinal = () => {
